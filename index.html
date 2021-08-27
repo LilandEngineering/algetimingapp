@@ -23,13 +23,13 @@
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="alge_app">
+  <meta name="apple-mobile-web-app-title" content="web">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>alge_app</title>
+  <title>web</title>
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
@@ -40,7 +40,7 @@
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
-    var serviceWorkerVersion = '2142852017';
+    var serviceWorkerVersion = '3036289800';
     var scriptLoaded = false;
     function loadMainDartJs() {
       if (scriptLoaded) {
@@ -64,8 +64,6 @@
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
-
-
     if ('serviceWorker' in navigator) {
       // Service workers are supported. Use them.
       window.addEventListener('load', function () {
@@ -115,20 +113,6 @@
       // Service workers not supported. Just drop the <script> tag.
       loadMainDartJs();
     }
-  </script>
-  <script>
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
-      apiKey: "AIzaSyDAtHarhmnFwKo0nInOOfThlIMNXrFd9u0",
-      authDomain: "algetimingapp.firebaseapp.com",
-      databaseURL: "https://algetimingapp.firebaseio.com",
-      projectId: "algetimingapp",
-      storageBucket: "algetimingapp.appspot.com",
-      messagingSenderId: "581137859845",
-      appId: "1:581137859845:web:cb5c1deb94f0fb9c22236c"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
   </script>
 </body>
 </html>
